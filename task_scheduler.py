@@ -2,7 +2,7 @@ import subprocess
 from datetime import datetime
 import pandas as pd
 import time
-def run_file(title, path, file, time):
+def run_file(title, path, file, time, week_day):
     try:
         filepath = (path+file)
         print('Running the process, '+title+' at '+ str(time))
@@ -20,7 +20,13 @@ while True:
     ls = df.values.tolist()
     for i in ls:
         now = datetime.now().strftime("%H:%M:%S")
-        if i[3] == now:
+        weekday = datetime.now().strftime("%A")
+        if i[4] != weekday:
             exec = run_file(i[0],i[1],i[2],i[3])
             time.sleep(10)
             print(exec)
+        else:
+            if i[4] == weekday and i[3] == now:
+                exec = run_file(i[0],i[1],i[2],i[3])
+                time.sleep(60)
+                print(exec)
