@@ -1,3 +1,3 @@
-title,path,file,time,weekday
-Task_n1,C:/Users/username/Desktop/,teste.bat,13:25:00,Sunday
-Task_n2,C:/Users/username/Desktop/Script/,exec_teste.bat,13:27:00,
+title,path,file,time,weekday,final_file,
+Task_n1,C:/Users/username/Desktop/,test.bat,13:25:00,Sunday,C:/Users/username/Desktop/test.bat,
+Task_n2,C:/Users/username/Desktop/Script/,exec_test.exe,13:27:00,,C:/Users/username/Desktop/Script/exec_test.exe
