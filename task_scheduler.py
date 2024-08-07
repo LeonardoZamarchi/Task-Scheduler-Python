@@ -50,6 +50,3 @@ while True:
                 exec = run_file(i[0],i[1],i[2],i[3])
                 time.sleep(60)
                 print(exec)
-        
-        if now == '07:00:00':
-            valida_exec(i[0],i[4],i[3],now_dt)
